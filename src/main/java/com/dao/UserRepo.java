@@ -1,7 +1,7 @@
-package com.telusko.spring_sec_demo.dao;
+package com.dao;
 
-import com.telusko.spring_sec_demo.model.User;
-import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration;
+
+import com.telusko.JobApp.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepo extends JpaRepository<User,Integer> {

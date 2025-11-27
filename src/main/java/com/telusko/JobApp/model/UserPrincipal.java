@@ -1,14 +1,10 @@
-package com.telusko.spring_sec_demo.model;
+package com.telusko.JobApp.model;
 
 import org.springframework.security.core.GrantedAuthority;
-
-
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.Collections;
-import java.util.List;
 
 public class UserPrincipal  implements org.springframework.security.core.userdetails.UserDetails {
     private User user;
@@ -28,5 +24,25 @@ public class UserPrincipal  implements org.springframework.security.core.userdet
     @Override
     public String getUsername() {
         return user.getUsername();
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return false;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return false;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return false;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return false;
     }
 }

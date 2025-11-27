@@ -1,8 +1,9 @@
 package com.telusko.JobApp.service;
 
-import com.telusko.spring_sec_demo.dao.UserRepo;
-import com.telusko.spring_sec_demo.model.User;
-import com.telusko.spring_sec_demo.model.UserPrincipal;
+
+import com.dao.UserRepo;
+import com.telusko.JobApp.model.User;
+import com.telusko.JobApp.model.UserPrincipal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

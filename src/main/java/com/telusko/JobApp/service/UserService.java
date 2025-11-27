@@ -1,7 +1,8 @@
 package com.telusko.JobApp.service;
 
-import com.telusko.spring_sec_demo.dao.UserRepo;
-import com.telusko.spring_sec_demo.model.User;
+
+import com.dao.UserRepo;
+import com.telusko.JobApp.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
